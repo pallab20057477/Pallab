@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+<link rel="icon" type="image.jpg" href="college.jpg">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;  
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            background-image: url("https://i.pinimg.com/564x/f0/59/4b/f0594bc27ea9423e1ef34e950120477a.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        form{
+            width: 200px;
+            height: 250px;
+            background-color: #f3f3f3f3;
+            border: 0.5 solid black;
+            padding: 40px 60px 70px 40px;
+            border-radius: 4px;
+            margin-top: 60px;
+             background-color: rgba(255, 255, 255, 0.3);
+             box-shadow: 1px 1px 1px 1px;
+        }
+        input{
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid blue;
+            color: green;
+
+        }
+        hr{
+            border: 1px solid #1da1f2 ;
+        }
+        #blue{
+            color: blue;
+        }
+        button{
+            margin-left: 30px;
+            width: 60px;
+            height: 30px;
+            padding: 2px ;
+            background-color: #1da1f2;
+            color: #ffffff;
+            border: none;
+            box-shadow: 0.3px 0.71px 0.71px 0.71px black;
+
+        }
+        button:hover{
+            background-color: #0e71a9;
+        }
+        #s{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label id ="s"><b>Login in</b> </label>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <label>User_Name*</label><br>
+        <input type="text" placeholder="User name" id="fname" required>
+        <br><br>
+        <label>Password* </label><br>
+        <input type="password" placeholder="Password" id="message" required>
+        <br><br>
+        <a> Remember me? </a>
+        <button>LOGIN</button>
+        <br><br>
+        <a id="blue"> Forgot Password </a>
+    </form>
+    <script href="java.js"></script>
+
+</body>
+</html>

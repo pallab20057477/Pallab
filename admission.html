@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Page</title>
+   
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="icon" type="image.jpg" href="college.jpg">
+	<link rel="stylesheet" type="text/css" href="w3-style.css">
+    <style type="text/css">
+    	body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: black; /*#04AA6D;*/
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the menu stays on top of other elements */
+}
+
+.menu1 {
+    text-decoration: none;
+    margin-left: 90px;
+    font-size: 20px;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu1:hover {
+    background-color: green;
+    color: white;
+    border-radius: 20%;
+    transform: scaleX(0.9);
+    transform: scaleY(1.1);
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background-color:rgba(90, 218, 230,0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: darkblue;
+}
+.jjj{
+            background-image: url("https://i.pinimg.com/564x/f0/59/4b/f0594bc27ea9423e1ef34e950120477a.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        input{
+        	color: green;
+        	height: 40px;
+        	border-radius: 5px;
+        }
+textarea{
+
+	/*border: 3px solid blue;*/
+	color: green;
+	}
+	.head{
+		height: 100px;
+		width: 100%;
+		background-color: rgba(69, 109, 113, 0.5);
+		top: 0;
+		padding: 5px;
+	}
+	.add{
+		width: 99%;
+		margin-left: 20px;
+		color: #825CAA;
+		font-size: 22px;
+	}
+	button{
+		height: 35px;
+		width: 150px;
+		border-radius: 10px;
+		background-color: darkblue;
+		color: white;
+        /*padding: 6px;*/
+	}
+	.footer{
+  display: flex;
+  justify-content: space-between;
+
+}
+.last1,.last2,.last3,.last4{
+  height: 30rem;
+  width:28rem;
+  /*border: 1px solid grey;*/
+  margin-right: 20px;
+}
+.rrr{
+  color: yellow;
+  height: 2rem;
+  width: 2rem;
+  background-color: lightblue;
+  padding: 4px;
+}
+.lllll{
+  height: 33rem;
+  width: 100%;
+  background-color: darkslategrey;
+    padding: 20px;
+}
+
+    </style>
+
+</head>
+<body>
+	<div class="jjj">
+    <div class="head w3-card-4">
+    	<h1 class="w3-text-yellow"><i class="fa-solid fa-building-columns"></i> Admission</h1>
+    </div>
+    <br>
+    <div class="add">
+    	<h3 class="w3-text-red">ADMISSION PROCESS GUIDELINES</h3>
+    	<br>
+    	<p>1) Are you interested to take admission at RCMS?
+If yes, then RCMS has a facility of the “Online Admission System” as well as you can book your seat in your desired course, which can be done through easy step-<br><br>
+2) You can simply fill up the Application Form and book your seat by clicking the "Click Here" button- <button>Click here!</button><br> <br> 
+3) You can pay your Seat Booking Amount (For BCA 10,200 and & BBA in Hospital Management & BHM 15,200) as well as Admission Fees through NEFT.</p>
+    </div><br>
+
+    <section id="admission">
+        <div class="container">
+            <h1>Admission Form</h1>
+            <form id="admissionForm">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname"placeholder="Enter your first Name.." required>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname"placeholder="Enter your Last Name.." required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"placeholder="Enter your Email.." required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your number.." required>
+
+                <label for="course">Course:</label>
+                <select id="course" name="course" required>
+                    <option value="bca">BCA</option>
+                    <option value="bba">BBA</option>
+                    <option value="bhm">BHM</option>
+                </select>
+               <label for="price">Price:</label>
+                <input type="number" id="price" name="price" placeholder="
+                Enter your price.."required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter your message.." required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+    <br>
+</div>
+
+    <footer class="lllll">
+		<div class="footer">
+		<div class="last1 w3-text-white">
+			<label class="w3-text-yellow w3-large">
+				<i class="fa-solid fa-location-dot"></i> Address
+			</label><br><br>
+			<i class="fa-solid fa-location-arrow"></i> Vill-Padmapukuria,P.O + P.S- Contai Dist-Purba Medinipur, W.B(721401)<br><br>
+			<i class="fa-solid fa-envelope"></i> pallabdasdas@gmail.com
+			<br><br>
+			<i class="fa-solid fa-phone"></i> 9932099499 / 7477761558
+		</div>
+		<div class="last2 w3-text-white">
+			<label class="w3-text-yellow w3-large"><i class="fa-solid fa-star"></i>  Important Links</label><br><br>
+			<i class="fa-solid fa-hand-point-right "></i> BCA<br>
+			<i class="fa-solid fa-hand-point-right"></i> HOSPITALITY MANAGEMENT<br>
+			<i class="fa-solid fa-hand-point-right"></i> ADMISSION<br>
+			<i class="fa-solid fa-hand-point-right"></i> PLACEMENT<br>
+			<i class="fa-solid fa-hand-point-right"></i>CONTACT <br>
+			<i class="fa-solid fa-hand-point-right"></i> NOTICE<br>
+			<i class="fa-solid fa-hand-point-right"></i> BLOG<br>
+			
+		</div>
+		<div class="last3">
+			<label class="w3-text-yellow w3-large">
+			<i class="fa-solid fa-newspaper"></i>
+			News Letter
+			</label><br><br>
+			<i class="fa-brands fa-whatsapp rrr w3-xlarge w3-hover-light-blue"></i>
+			<i class="fa-brands fa-facebook rrr w3-xlarge w3-hover-light-blue"></i>
+			<i class="fa-brands fa-linkedin rrr w3-xlarge w3-hover-light-blue"></i>
+			<i class="fa-brands fa-square-x-twitter rrr w3-xlarge w3-hover-light-blue"></i>
+			<i class="fa-brands fa-square-instagram rrr w3-xlarge w3-hover-light-blue"></i>
+			
+		</div>
+		<div class="last4">
+			<h5 class="w3-text-blue">Google Map</h5><br>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.885504208363!2d87.734762173901!3d21.784691861389376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0326f87e6e8479%3A0xb610eefe9d9387c1!2sContai%20College%20of%20Learning%20%26%20Management%20Science!5e0!3m2!1sen!2sin!4v1713520555759!5m2!1sen!2sin" width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+		</div>
+		<label class="w3-text-white" style="margin-left: 140px;">© 2024 RCMS | All Rights Reserved created By Pallab Das</label>
+	</footer>
+
+    <script >
+    	document.getElementById('admissionForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting the default way
+
+    // Form validation
+    var fname = document.getElementById('fname').value;
+    var lname = document.getElementById('lname').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+    var course = document.getElementById('course').value;
+    var message = document.getElementById('message').value;
+    var price = document.getElementById('price').value;
+    if(fname && lname && email && phone && course && message&&price) {
+        alert('Form submitted successfully!');
+        // You can add your form submission logic here (e.g., sending the data to a server)
+    } else {
+        alert('Please fill in all the fields.');
+    }
+});
+
+    	
+    </script>
+</body>
+</html>
